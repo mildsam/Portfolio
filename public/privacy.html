@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Samuel Idakwo</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // Custom Tailwind config from index.html
+        const customTailwindConfig = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6', primaryDark: '#1d4ed8', accent: '#06B6D4', 
+                        lightBg: '#F8FAFC', textDark: '#0F172A', textGray: '#64748B', 
+                        purple: {
+                            400: '#38BDF8', 500: '#0EA5E9', 600: '#0284C7', 700: '#0369A1', 800: '#075985',
+                        }
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'], }
+                }
+            }
+        };
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = customTailwindConfig;
+        } else {
+            window.addEventListener('load', function() {
+                if (typeof tailwind !== 'undefined') {
+                    tailwind.config = customTailwindConfig;
+                }
+            });
+        }
+    </script>
+    <style>
+        /* Shared styles from index.html */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        .dark ::-webkit-scrollbar-track { background: #1f2937; }
+        ::-webkit-scrollbar-thumb { background: #06B6D4; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0891b2; }
+        body, div, section, nav, a, p, h1, h2, h3, h4, h5, span, input, textarea, button, aside {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-lightBg dark:bg-gray-900 text-textDark dark:text-gray-100 font-sans antialiased overflow-x-hidden">
+
+    <div class="flex min-h-screen relative">
+        <div class="w-72 hidden lg:block"></div> <main class="flex-1 w-full lg:w-auto overflow-hidden pt-16 lg:pt-0 bg-lightBg dark:bg-gray-900 transition-colors">
+            
+            <section class="py-20 px-6 lg:px-16 bg-white dark:bg-gray-800 transition-colors">
+                <div class="max-w-6xl mx-auto">
+                    <h1 class="text-4xl font-bold mb-4 text-textDark dark:text-white">Privacy Policy</h1>
+                    <div class="h-1 w-20 bg-accent rounded-full mb-8"></div>
+                    <p class="text-textGray dark:text-gray-300 mb-6 text-sm">Last updated: November 2025</p>
+
+                    <h2 class="text-2xl font-bold mt-8 mb-3 dark:text-white">1. Information We Collect</h2>
+                    <p class="text-textGray dark:text-gray-300 mb-4 leading-relaxed">We collect personal data when you voluntarily provide it to us through the Contact Form.</p>
+                    <ul class="list-disc list-inside space-y-2 text-textGray dark:text-gray-300 ml-4">
+                        <li>**Personal Information:** Your Name, Email Address, and Subject/Message content.</li>
+                        <li>**Usage Data:** General browsing information (IP address, browser type) is collected by our hosting provider (Netlify/GitHub Pages) and may be collected if we implement analytics (e.g., Google Analytics).</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mt-8 mb-3 dark:text-white">2. How We Use Your Information</h2>
+                    <p class="text-textGray dark:text-gray-300 mb-4 leading-relaxed">We use the collected information primarily for the following purposes:</p>
+                    <ul class="list-disc list-inside space-y-2 text-textGray dark:text-gray-300 ml-4">
+                        <li>To respond to your inquiries, comments, or requests submitted via the contact form.</li>
+                        <li>To maintain and improve the functionality of the website.</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mt-8 mb-3 dark:text-white">3. Data Sharing and Disclosure</h2>
+                    <p class="text-textGray dark:text-gray-300 mb-4 leading-relaxed">We do not sell your personal data. Your contact form data is processed by **Formspree** to securely deliver your message to us. Formspree acts as a data processor for this purpose.</p>
+                    
+                    <h2 class="text-2xl font-bold mt-8 mb-3 dark:text-white">4. Your Rights</h2>
+                    <p class="text-textGray dark:text-gray-300 mb-4 leading-relaxed">You have the right to request access to or deletion of any personal data we hold about you. Please contact us directly to exercise these rights.</p>
+                    
+                    <h2 class="text-2xl font-bold mt-8 mb-3 dark:text-white">5. Contact Us</h2>
+                    <p class="text-textGray dark:text-gray-300 mb-4 leading-relaxed">If you have any questions about this Privacy Policy, please contact us:</p>
+                    <p class="text-textGray dark:text-gray-300 font-semibold">Email: Samthemajestic@gmail.com</p>
+
+                </div>
+            </section>
+
+            <footer class="bg-textDark dark:bg-black text-white py-8 text-center lg:text-left px-6 lg:px-16 transition-colors">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-400 mb-4 md:mb-0">&copy; 2025 <span class="text-white font-bold">Samuel Idakwo</span>. All Rights Reserved.</p>
+                    <div class="flex gap-4">
+                        <a href="../index.html" class="text-gray-400 hover:text-accent transition-colors">Home</a>
+                        <a href="./terms.html" class="text-gray-400 hover:text-accent transition-colors">Terms</a>
+                        <a href="./privacy.html" class="text-gray-400 hover:text-accent transition-colors">Privacy</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    </body>
+</html>
