@@ -79,6 +79,21 @@
             font-weight: 600;
             background-color: rgba(255, 255, 255, 0.1);
         }
+
+        @media (max-width: 521px) {
+            /* Target the filter buttons container */
+            .portfolio-filters {
+                /* Forces items to wrap */
+                flex-wrap: wrap; 
+                /* Centers the buttons when they wrap to the next line */
+                justify-content: center !important; 
+            }
+            /* Add a little more spacing between wrapped lines */
+            .portfolio-filters button {
+                margin: 4px; 
+                font-size: 5px !important; /* Slightly smaller font for mobile */
+            }
+        }
     </style>
 </head>
 <body class="bg-lightBg dark:bg-gray-900 text-textDark dark:text-gray-100 font-sans antialiased selection:bg-accent selection:text-white overflow-x-hidden">
@@ -288,10 +303,10 @@
                             <div>
                                 <div class="flex justify-between mb-1">
                                     <span class="font-medium dark:text-gray-200">Problem Solving</span>
-                                    <span class="text-primary dark:text-purple-400">95%</span>
+                                    <span class="text-primary dark:text-purple-400">85%</span>
                                 </div>
                                 <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                    <div class="bg-accent h-2.5 rounded-full" style="width: 95%"></div>
+                                    <div class="bg-accent h-2.5 rounded-full" style="width: 85%"></div>
                                 </div>
                             </div>
                         </div>
@@ -355,7 +370,7 @@
                             <div class="relative overflow-hidden h-48">
                                 <img src="./assets/images/phishingDetector.png" alt="Phishing Detection System Screenshot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                                 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                    <a href="https://github.com/mildsam/phishing-detector" target="_blank" class="bg-white text-primary px-6 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">View Repository</a>
+                                    <a href="https://github.com/mildsam/Phishing-Detection-System?tab=readme-ov-file" target="_blank" class="bg-white text-primary px-6 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">View Repository</a>
                                 </div>
                             </div>
                             <div class="p-6">
@@ -374,7 +389,7 @@
                             <div class="relative overflow-hidden h-48">
                                 <img src="./assets/images/edubot.png" alt="EDU BOT AI Chat Interface Screenshot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                                 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                    <a href="https://github.com/mildsam/edubot-ai" target="_blank" class="bg-white text-primary px-6 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">View Repository</a>
+                                    <a href="https://mildsam.github.io/Edu-bot/" target="_blank" class="bg-white text-primary px-6 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</a>
                                 </div>
                             </div>
                             <div class="p-6">
@@ -392,7 +407,7 @@
                             <div class="relative overflow-hidden h-48">
                                 <img src="./assets/images/e-commerceProject.png" alt="Lumina E-Commerce Screenshot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                                 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                    <a href="https://github.com/mildsam/lumina-ecommerce" target="_blank" class="bg-white text-primary px-6 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">View Repository</a>
+                                    <a href="https://mildsam.github.io/E-commerce_demo/" target="_blank" class="bg-white text-primary px-6 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</a>
                                 </div>
                             </div>
                             <div class="p-6">
@@ -410,7 +425,7 @@
                             <div class="relative overflow-hidden h-48">
                                 <img src="./assets/images/dashboard.png" alt="Nexus Analytics Dashboard Screenshot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                                 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                    <a href="https://github.com/mildsam/nexus-dashboard" target="_blank" class="bg-white text-primary px-6 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">View Repository</a>
+                                    <a href="https://mildsam.github.io/Nexus_Dashboard/" target="_blank" class="bg-white text-primary px-6 py-2 rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform">View Project</a>
                                 </div>
                             </div>
                             <div class="p-6">
@@ -424,7 +439,7 @@
                             </div>
                         </div>
 
-                        <div class="project-item hidden bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group" data-category="web-design">
+                        <!-- <div class="project-item hidden bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group" data-category="web-design">
                             <div class="relative overflow-hidden h-48">
                                 <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fit=crop&w=600&h=400" alt="Project 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                                 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -439,7 +454,7 @@
                                     <span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300">CSS</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         
                         </div>
                     
