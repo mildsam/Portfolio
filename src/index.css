@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+  --color-primary: #3B82F6;
+  --color-primaryDark: #1d4ed8;
+  --color-accent: #06B6D4;
+  --color-lightBg: #F8FAFC;
+  --color-textDark: #0F172A;
+  --color-textGray: #64748B;
+  
+  --color-purple-400: #38BDF8;
+  --color-purple-500: #0EA5E9;
+  --color-purple-600: #0284C7;
+  --color-purple-700: #0369A1;
+  --color-purple-800: #075985;
+}
+
+@layer base {
+  body {
+    @apply bg-lightBg text-textDark antialiased overflow-x-hidden selection:bg-accent selection:text-white;
+  }
+  
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar { 
+    width: 8px; 
+  }
+  ::-webkit-scrollbar-track { 
+    background: #f1f1f1; 
+  }
+  .dark ::-webkit-scrollbar-track { 
+    background: #1f2937; 
+  }
+  ::-webkit-scrollbar-thumb { 
+    background: #06B6D4; 
+    border-radius: 4px; 
+  }
+  ::-webkit-scrollbar-thumb:hover { 
+    background: #0891b2; 
+  }
+
+  /* Smooth color transitions */
+  body, div, section, nav, a, p, h1, h2, h3, h4, h5, span, input, textarea, button, aside {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  .fade-in-up { 
+    animation: fadeInUp 0.8s ease-out forwards; 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  
+  @keyframes fadeInUp { 
+    to { opacity: 1; transform: translateY(0); } 
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    /* gap-8 is 2rem. 50% of the total container includes half the gap (1rem). 
+       We subtract another 1rem to shift a full set + gap. */
+    100% { transform: translateX(calc(-50% - 1rem)); }
+  }
+
+  /* Hide scrollbar utility */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* Nav Active State */
+.nav-active {
+  color: #06B6D4 !important;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.1);
+}
