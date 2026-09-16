@@ -38,10 +38,10 @@ const Sidebar = ({ isMobileMenuOpen, closeMobileMenu, toggleTheme, isDarkMode })
   return (
     <>
       <aside 
-        className={`fixed lg:sticky top-0 h-screen w-72 bg-gradient-to-br from-primaryDark to-primary dark:from-gray-800 dark:to-gray-900 text-white p-6 flex flex-col z-40 transform transition-transform duration-300 shadow-2xl overflow-y-auto 
+        className={`fixed lg:sticky top-0 h-screen w-72 bg-gradient-to-br from-primaryDark to-primary dark:from-gray-800 dark:to-gray-900 text-white flex flex-col z-40 transform transition-transform duration-300 shadow-2xl 
         ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}
       >
-        <div className="text-center mb-8 mt-12 lg:mt-0">
+        <div className="text-center mb-8 mt-12 lg:mt-6 px-6 shrink-0">
           <div className="relative inline-block mb-4">
             <img 
               src="/assets/images/profileImg.jpg" 
@@ -57,7 +57,7 @@ const Sidebar = ({ isMobileMenuOpen, closeMobileMenu, toggleTheme, isDarkMode })
           </p>
         </div>
 
-        <nav className="flex-1 px-2">
+        <nav className="flex-1 px-8 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           <ul className="space-y-2">
             <li><a href="#home" onClick={closeMobileMenu} className={`nav-link block py-3 px-4 rounded-lg hover:bg-white/10 hover:translate-x-2 transition-all duration-300 flex items-center gap-3 ${activeSection === 'home' ? 'nav-active' : ''}`}><Home className="w-5 h-5" /> Home</a></li>
             <li><a href="#about" onClick={closeMobileMenu} className={`nav-link block py-3 px-4 rounded-lg hover:bg-white/10 hover:translate-x-2 transition-all duration-300 flex items-center gap-3 ${activeSection === 'about' ? 'nav-active' : ''}`}><User className="w-5 h-5" /> About</a></li>
@@ -69,14 +69,14 @@ const Sidebar = ({ isMobileMenuOpen, closeMobileMenu, toggleTheme, isDarkMode })
           </ul>
         </nav>
 
-        <div className="px-2 py-4 border-t border-white/10">
+        <div className="px-6 py-4 border-t border-white/10 shrink-0">
           <button onClick={toggleTheme} className="w-full py-2 px-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center gap-2 text-sm font-semibold">
             {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />} 
             <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
           </button>
         </div>
 
-        <div className="pt-4 text-center">
+        <div className="pb-6 text-center shrink-0">
           <div className="flex justify-center space-x-4 mb-4">
             <a href="https://www.linkedin.com/in/idakwosamuel/" target="_blank" rel="noreferrer" className="hover:text-accent transition-colors transform hover:scale-110"><LinkedinIcon className="w-5 h-5" /></a>
             <a href="https://github.com/mildsam" target="_blank" rel="noreferrer" className="hover:text-accent transition-colors transform hover:scale-110"><GithubIcon className="w-5 h-5" /></a>

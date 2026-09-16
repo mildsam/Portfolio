@@ -18,7 +18,7 @@ const Hero = () => {
           <a href="#projects" className="bg-accent text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-cyan-600 hover:shadow-cyan-500/30 transition-all transform hover:-translate-y-1">
             View My Work
           </a>
-          <a href="/assets/documents/Samuel_Idakwo_Professional_CV.pdf" target="_blank" rel="noreferrer" className="bg-primary dark:bg-purple-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-primaryDark dark:hover:bg-purple-800 hover:shadow-blue-500/30 transition-all transform hover:-translate-y-1">
+          <a href="/assets/documents/Samuel_Idakwo_CV.pdf" target="_blank" rel="noreferrer" className="bg-primary dark:bg-purple-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-primaryDark dark:hover:bg-purple-800 hover:shadow-blue-500/30 transition-all transform hover:-translate-y-1">
             Download CV
           </a>
         </div>

@@ -63,6 +63,22 @@ const Experience = () => {
               </ul>
             </div>
           </div>
+          
+          {/* Zeqah */}
+          <div className="relative pl-8 md:pl-10">
+            <div className="absolute -left-[25px] top-1 bg-white dark:bg-gray-800 border-4 border-primary dark:border-purple-500 w-12 h-12 rounded-full flex items-center justify-center">
+              <Briefcase className="w-5 h-5 text-primary dark:text-purple-400" />
+            </div>
+            <div className="bg-lightBg dark:bg-gray-700 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold text-textDark dark:text-white">Lead Web Developer (Volunteer)</h3>
+              <h4 className="text-lg text-primary dark:text-purple-400 font-medium mb-4">Zeqah</h4>
+              <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 text-sm leading-relaxed">
+                <li>Built a responsive educational support platform for student admission guidance and IT skill development.</li>
+                <li>Developed a custom CMS using Firebase Authentication and Firestore for blog management, including Markdown editing and live preview.</li>
+                <li>Built blog search/filtering, lead-capture forms, and an admin dashboard for managing submissions.</li>
+              </ul>
+            </div>
+          </div>
 
         </div>
       </div>

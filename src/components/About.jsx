@@ -51,7 +51,7 @@ const About = () => {
               </div>
             </div>
             
-            <a href="/assets/documents/Samuel_Idakwo_Professional_CV.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center text-primary dark:text-purple-400 border-2 border-primary dark:border-purple-400 px-6 py-2 rounded-full font-semibold hover:bg-primary hover:text-white dark:hover:bg-purple-400 dark:hover:text-gray-900 transition-all">
+            <a href="/assets/documents/Samuel_Idakwo_CV.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center text-primary dark:text-purple-400 border-2 border-primary dark:border-purple-400 px-6 py-2 rounded-full font-semibold hover:bg-primary hover:text-white dark:hover:bg-purple-400 dark:hover:text-gray-900 transition-all">
               <Download className="w-5 h-5 mr-2" /> Download CV
             </a>
           </div>

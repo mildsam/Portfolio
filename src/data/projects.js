@@ -183,5 +183,35 @@ export const projects = [
       overview: "A demonstration of complex client-side interactions and dashboard visualization techniques.",
     },
     featured: false
+  },
+  {
+    id: 8,
+    title: "Zeqah",
+    subtitle: "Educational Support Platform",
+    category: ["Full-Stack", "Volunteer"],
+    role: "Lead Web Developer",
+    description: "A responsive educational support platform built to provide student admission guidance and IT skill development.",
+    technologies: [
+      "HTML5", "JavaScript", "Tailwind CSS", "Firebase Auth", "Firestore"
+    ],
+    features: [
+      "Custom CMS for blog management",
+      "Markdown editing and live preview",
+      "Blog search and filtering",
+      "Lead-capture forms",
+      "Admin dashboard for submissions"
+    ],
+    image: "/assets/images/Zeqah.jpg",
+    imageFit: "cover",
+    repository: "",
+    liveUrl: "",
+    caseStudy: {
+      overview: "Zeqah is an educational support platform that aids students with admission guidance and IT skill development. I volunteered as the Lead Web Developer to build the platform and a custom CMS from the ground up.",
+      myRole: "Lead Web Developer (Volunteer)",
+      technicalImplementation: "Developed a custom CMS using Firebase Authentication and Firestore. Implemented Markdown editing for blogs, search/filtering capabilities, and a complete admin dashboard.",
+      keyFeatures: "Custom CMS, Markdown editing, live preview, lead capture, and admin dashboard.",
+      technologies: "HTML5, JavaScript (ES6+), Tailwind CSS, Firebase Authentication, Firestore"
+    },
+    featured: true
   }
 ];
