@@ -11,7 +11,7 @@ const Projects = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const filters = ['All', 'Backend', 'Full-Stack', 'AI / ML', 'Earlier Projects'];
+  const filters = ['All', 'Backend', 'Web', 'AI / ML'];
 
   const filteredProjects = projects.filter(project => {
     if (filter === 'All') {

@@ -9,7 +9,7 @@ const Hero = () => {
           Welcome to my world
         </span>
         <h1 className="text-5xl md:text-7xl font-bold text-textDark dark:text-white leading-tight mb-4">
-          Backend-Focused <br /> <span className="text-primary dark:text-purple-400">Full-Stack Engineer</span>
+          Backend-Focused <br /> <span className="text-primary dark:text-purple-400">Software Engineer</span>
         </h1>
         <p className="text-xl text-textGray dark:text-gray-300 mb-8 max-w-2xl">
           I build reliable backend systems, REST APIs and database-driven web applications, while working across the full stack to turn practical ideas into useful software.

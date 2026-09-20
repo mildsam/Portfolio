@@ -1,10 +1,37 @@
 export const skills = {
-  Backend: ["Node.js", "Express.js", "REST APIs", "JWT", "WebSockets", "Node-Cron"],
-  Databases: ["MongoDB", "Mongoose", "MySQL"],
-  Frontend: ["JavaScript", "React", "HTML", "CSS", "TailwindCSS"],
-  ToolsAndIntegrations: [
-    "Git", "GitHub", "Postman", "Paystack", 
-    "Cloudinary", "Cloudflare Stream", "SendGrid", "OneSignal", "Redis"
+  Backend: [
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "JWT",
+    "Node-Cron",
+    "MongoDB Aggregation"
   ],
-  CurrentlyDeveloping: ["TypeScript", "Advanced backend architecture", "System design"]
+
+  Databases: [
+    "MongoDB",
+    "Mongoose"
+  ],
+
+  Frontend: [
+    "JavaScript",
+    "React",
+    "HTML",
+    "CSS",
+    "Tailwind CSS"
+  ],
+
+  ToolsAndIntegrations: [
+    "Git",
+    "GitHub",
+    "Postman",
+    "VS Code"
+  ],
+
+  CurrentlyDeveloping: [
+    "TypeScript",
+    "Automated Testing",
+    "Backend Architecture",
+    "System Design"
+  ]
 };

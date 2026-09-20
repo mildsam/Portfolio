@@ -23,10 +23,10 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-2 text-textDark dark:text-white">About Me</h2>
             <div className="h-1 w-20 bg-accent rounded-full mb-6"></div>
             <p className="text-textGray dark:text-gray-300 mb-6 leading-relaxed">
-              I am a Computer Science graduate from the University of Benin and a backend-focused full-stack developer interested in building reliable, practical software systems.
+              I am a Computer Science graduate from the University of Benin and a backend-focused software engineer interested in building reliable, practical software systems.
             </p>
             <p className="text-textGray dark:text-gray-300 mb-6 leading-relaxed">
-              My experience includes developing REST APIs, backend business logic, authentication systems, database-driven applications and third-party integrations with Node.js and Express.js. I have also contributed to real-world client projects and full-stack applications while continuing to strengthen my software engineering fundamentals.
+              My experience includes developing REST APIs, backend business logic, authentication systems, database-driven applications and third-party integrations with Node.js and Express.js. I've worked on production and client projects including a virtual cinema platform, a health-tracking mobile application, and business websites, while also volunteering as a web developer for Zeqah, an educational support platform. I continue to strengthen my software engineering fundamentals.
             </p>
             <p className="text-textGray dark:text-gray-300 mb-6 leading-relaxed">
               I enjoy understanding how systems work behind the interface and turning real problems into maintainable software.

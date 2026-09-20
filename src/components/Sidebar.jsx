@@ -52,8 +52,8 @@ const Sidebar = ({ isMobileMenuOpen, closeMobileMenu, toggleTheme, isDarkMode })
             <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-primary dark:border-gray-800"></div>
           </div>
           <h1 className="text-2xl font-bold tracking-wide">Samuel Idakwo</h1>
-          <p className="text-sm text-gray-200 mt-1 font-light uppercase tracking-wider">
-            Backend-Focused Full-Stack Engineer
+          <p className="text-sm text-gray-400 mt-1 font-light uppercase tracking-wider">
+            Backend-Focused Software Engineer
           </p>
         </div>
 

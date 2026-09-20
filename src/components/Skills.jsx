@@ -64,7 +64,7 @@ const Skills = () => {
             <div className="relative overflow-hidden bg-gradient-to-br from-white to-slate-50 dark:from-gray-800 dark:to-gray-800/80 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 flex-1 hover:shadow-xl hover:shadow-accent/5 dark:hover:shadow-accent/10 hover:-translate-y-1 hover:border-accent/30 transition-all duration-300 group">
               <div className="absolute -right-10 -top-10 w-40 h-40 bg-accent/5 rounded-full blur-3xl group-hover:bg-accent/20 transition-all duration-500"></div>
               <div className="relative z-10">
-                <h3 className="text-xl font-bold mb-6 text-primary dark:text-purple-400 border-b pb-2 dark:border-gray-700 group-hover:border-accent/50 transition-colors">Tools & Integrations</h3>
+                <h3 className="text-xl font-bold mb-6 text-primary dark:text-purple-400 border-b pb-2 dark:border-gray-700 group-hover:border-accent/50 transition-colors">Development Tools</h3>
                 <ul className="space-y-3 grid grid-cols-2 gap-x-2">
                   {skills.ToolsAndIntegrations.map(skill => (
                     <li key={skill} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-sm group/item hover:translate-x-1 transition-transform duration-300">
